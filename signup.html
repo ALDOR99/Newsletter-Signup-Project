@@ -26,11 +26,11 @@
     />
 
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="/" method="POST">
       <img
         class="mb-4"
         src="image/j_jonah_jameson_png_by_akithefull_dfljqar-fullview.png"
@@ -42,7 +42,8 @@
 
       <input
         type="text"
-        class="form-control"
+        name="fName"
+        class="form-control top"
         placeholder="First Name"
         required
         autofocus
@@ -50,12 +51,19 @@
 
       <input
         type="text"
-        class="form-control"
+        name="lName"
+        class="form-control middle"
         placeholder="Last Name"
         required
       />
 
-      <input type="email" class="form-control" placeholder="Email" required />
+      <input
+        type="email"
+        name="email"
+        class="form-control bottom"
+        placeholder="Email"
+        required
+      />
 
       <label> <input type="checkbox" value="remember-me" /> Remember me </label>
 
